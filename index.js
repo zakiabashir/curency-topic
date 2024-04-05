@@ -40,11 +40,8 @@ let answer = await inquirer.prompt([{
     }
 ]);
 let fromamount = currency[answer.from];
-let toamount = currency[answer.from];
+let toamount = currency[answer.to];
 let amount = answer.amount;
 let baseamount = amount / fromamount; //usd base currency
 let convertedamount = baseamount * toamount;
 console.log(convertedamount);
-console.log(fromamount);
-console.log(toamount);
-console.log(amount);
